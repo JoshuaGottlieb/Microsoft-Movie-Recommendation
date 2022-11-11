@@ -160,3 +160,7 @@ __pycache__/
 *.csv
 *.tsv
 *.db
+
+# Zipped files
+*.gz
+*.zip
