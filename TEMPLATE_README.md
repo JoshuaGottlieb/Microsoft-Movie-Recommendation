@@ -35,6 +35,7 @@ Describe the data being used for this project.
 Questions to consider:
 * Where did the data come from, and how do they relate to the data analysis questions?
 * What do the data represent? Who is in the sample and what variables are included?
+The multiple datasets presented data regarding genres, user ratings from multiple sources like imdb and rotten tomatoes, directors and writers. We needed to reduce our sample size due to the lack of primary keys from other datasets that prevented us from merging dataframes together. 
 * What is the target variable?
 * What are the properties of the variables you intend to use?
 ***
@@ -46,6 +47,9 @@ Describe the process for analyzing or modeling the data. For Phase 1, this will 
 ***
 Questions to consider:
 * How did you prepare, analyze or model the data?
+We prepared the data by going through each dataset, figuring out which datasets can be merged with other ones and cleaning each dataframe created. 
+After the preparation, we proceeded with data analysis. We decided which datasets to use and merged into one cohesive dataframe that helped us figure out which variables play a huge role in a movies financial success. 
+The last step of the project, after cleaning and analyzing is visualizing all the output of our analysis. We used different types of plots and graphs that explained all our findings. 
 * Why is this approach appropriate given the data and the business problem?
 ***
 
