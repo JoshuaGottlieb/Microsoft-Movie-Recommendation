@@ -161,7 +161,3 @@ __pycache__/
 !merged_data.csv
 *.tsv
 *.db
-
-# Zip Files
-*.gz
-*.zip
