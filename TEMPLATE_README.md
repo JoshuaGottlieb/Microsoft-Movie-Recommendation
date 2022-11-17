@@ -4,6 +4,8 @@
 
 ## Overview
 
+We were tasked with providing Microsoft a recommendation on how to get into the movie making business by looking at what films are currently doing well in the box office. Our chosen measure of successs is Return on Investment. Our data sources are The Numbers (tn.movie_budgets.csv), The Movie Database (tmdb.movies.csv), Box Office Mojo (bom.movie_gross.csv), and IMDb (im.db). The data cleaning process we used was dropping all data that could not be joined on the movie title and only looked at 2010-2019. This was done because budget data only had title to join on and the business question only cares about recent data. Mystery and Sci-Fi are the best genres to start with given their high median and upward trend in the most recent years. Animation was the highest performing movie in the time but has been on the decline recently so would not recommend investing in it. Horror and Thriller are worth keeping tabs on due to their upward trend but would be best to wait on it to see if the trend continues. 
+
 A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
 
 ## Business Problem
