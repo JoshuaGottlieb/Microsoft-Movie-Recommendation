@@ -43,14 +43,14 @@ As part of our analysis, we grouped our data along each of our categorical varia
 ### Median ROI by Genre
 ![graph1](./images/median_roi_by_genre.png)
 
-Animation, Mystery and Sci-Fi are the top performing genres from 2010-2019.
+Animation, mystery and sci-fi are the top performing genres from 2010-2019.
 
 ### Top Genres by ROI Over Time
 ![graph2](./images/change_in_roi_by_genre.png)
 
-However Animation has not been trending well, while Mystery and Sci-Fi are still performing strong at the end of the timeframe. 
+However animation has not been trending well, while mystery and sci-fi are still performing strong at the end of the timeframe. 
 
-Horror and Thriller are trending upward despite not being top 5. 
+Horror and thriller are trending upward despite not being top 5. 
 
 ### Top Directors
 ![graph3](./images/top_directors_by_genre.png)
@@ -62,31 +62,63 @@ If any of these graphs are hard to look at due to the web browers settings pleas
 
 ## Conclusions
 
-Invest in Mystery and Sci-Fi movies due to their high ROI and recent trend.
+Microsoft should invest in mystery and sci-fi movies due to their high median ROI and recent upward trend.
 
-Monitor Horror and Thriller movies due to their recent trend. Invest in them if they continue to yield high ROIs.
+Horror and thriller movies should be monitored due to their recent growth, if they continue to show growth, Microsoft should consider investing in these genres.
 
-Make a Fantasy move with David Lowery as the Director and Writer.
+David Lowery is the highest performing director and writer, so Microsoft should consider making a fantasy movie spearheaded by David Lowery.
 
-Gather more data to look at Parental Ratings, User Ratings and get the most recent years data as well as fill in any gaps in the 2010-2019 data. The density of sentiment from users usually determines the popularity of a genre and it dictates the current trend, what most viewers want to watch or what movies interests them.
+For the future, we would like to gather more data to fill in some of the gaps in our data set. Our data has many different naming conventions that made merging difficult, and it would be prudent to look into the `FuzzyWuzzy` Python package to utilize fuzzy logic to increase title match rates. We would also like to get the most recent years of data as our data only contained entries up to 2019.
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
+Other variables we would investigate include parental guideline ratings and user ratings. One of our data sources had parental guidelines but no titles, making it impossible to merge to our overall dataset. Parental guidelines may determine overall viewership population, while user ratings could help determine the popularity of a genre and the current trend of which genres hold the most public favor.
 
 
 ## For More Information
 
 Please look at our full analysis in [our Jupyter Notebooks](./notebooks) or our [presentation](./Movie_Presentation.pdf).
 
-For any additional questions, please contact **Jocel Arcelona (jocelarcelona30@gmail.com), Josh Gottlieb (joshuadavidgottlieb@gmail.com), or Josh Palgon (jopalgon@gmail.com)**.
+For any additional questions, please contact:
+
+<ul>
+    <li>**Jocel Arcelona (jocelarcelona30@gmail.com)**</li>
+    <li>**Josh Gottlieb (joshuadavidgottlieb@gmail.com)**</li>
+    <li>**Josh Palgon (jopalgon@gmail.com)**</li>
+</ul>
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
-
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── README.md                                <- The top-level README for reviewers of this project
+├── Movie_Presentation.pdf                   <- PDF version of project presentation
+├── .gitignore                               <- Hidden file specifying which files to ignore
+├── notebooks                                <- Folder housing Jupyter notebooks with project code
+│   ├── EDA.ipynb                            <- Notebook containing exploratory data analysis code
+│   ├── Merging_and_Cleaning.ipynb           <- Notebook containing merging and cleaning operations code
+│   └── Visualization.ipynb                  <- Notebook containing visualization code
+├── data                                     <- Folder containing external and code-generated data
+│   ├── cleaned                              <- Folder containing cleaned data used by EDA and Visualization notebooks
+│   │   └── merged_data.parquet              
+│   ├── raw                                  <- Folder containing raw files used by Merging notebook
+│   │   ├── bom.movie_gross.csv              
+│   │   ├── im.db                            
+│   │   ├── rt.movie_info.tsv                
+│   │   ├── rt.reviews.tsv                   
+│   │   ├── tmdb.movies.csv                  
+│   │   ├── tn.movie_budgets.csv             
+│   │   └── unzip.py                         <- Python script to transform zipped data into raw data
+│   └── zipped                               <- Folder containing zipped data
+│       ├── bom.movie_gross.csv.gz
+│       ├── im.db.zip
+│       ├── rt.movie_info.tsv.gz
+│       ├── rt.reviews.tsv.gz
+│       ├── tmdb.movies.csv.gz
+│       └── tn.movie_budgets.csv.gz
+└── images                                   <- Folder containing images generated from code
+│   ├── change_in_roi_by_genre.png
+│   ├── distribution_of_roi_by_genre.png
+│   ├── median_roi_by_genre.png
+│   ├── runtime_and_roi.png
+│   ├── top_directors_by_genre.png
+│   └── top_writers_by_genre.png
+
 ```
