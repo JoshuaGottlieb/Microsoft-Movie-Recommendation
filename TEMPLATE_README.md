@@ -96,9 +96,13 @@ Provide your conclusions about the work you've done, including any limitations o
 ***
 Questions to consider:
 * What would you recommend the business do as a result of this work?
+We recommend Microsoft to focus on the top 5 genres based on their rate of profitability, which directors are exceling in those said genres and to focus on the current trends that's making the market tick 
 * What are some reasons why your analysis might not fully solve the business problem?
+There are some vital information that was not provided in the dataset that would have helped answering the business problem more accurately like parental guidelines and the user ratings. The density of sentiment from users usually determines the popularity of a genre and it dictates the current trend, what most viewers want to watch or what movies interests them. 
 * What else could you do in the future to improve this project?
-***
+Provide more recent data in order to increase the accuracy of future predictions
+
+***We recommend Microsoft to focus on the top 5 genres based on their rate of profitability, which directors are exceling in those said genres and to focus on the current trends that's making the market tick 
 
 ## For More Information
 
