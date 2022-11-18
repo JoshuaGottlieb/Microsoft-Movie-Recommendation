@@ -68,7 +68,11 @@ Questions to consider:
 
 ## Results
 
-Animation, Mystery and Sci-Fi are the top performing genres from 2010-2019. However Animation has not been trending well, while Mystery and Sci-Fi are still performing strong at the end of the timeframe. Horror and Thriller are trending upward despite not being top 5. David Lowery is the top performing director and writer despite being in the fantasy genre that is not top 5.
+Animation, Mystery and Sci-Fi are the top performing genres from 2010-2019. However Animation has not been trending well, while Mystery and Sci-Fi are still performing strong at the end of the timeframe. 
+
+Horror and Thriller are trending upward despite not being top 5. 
+
+David Lowery is the top performing director and writer despite being in the fantasy genre that is not top 5.
 
 Present your key results. For Phase 1, this will be findings from your descriptive analysis.
 
@@ -94,8 +98,12 @@ If any of these graphs are hard to look at due to the web browers settings pleas
 ## Conclusions
 
 Invest in Mystery and Sci-Fi movies due to their high ROI and recent trend.
+
 Monitor Horror and Thriller movies due to their recent trend. Invest in them if they continue to yield high ROIs.
+
 Make a Fantasy move with David Lowery as the Director and Writer.
+
+Gather more data to look at Parental Ratings, User Ratings and get the most recent years data as well as fill in any gaps in the 2010-2019 data.
 
 Provide your conclusions about the work you've done, including any limitations or next steps.
 
