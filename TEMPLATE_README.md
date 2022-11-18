@@ -51,9 +51,11 @@ Questions to consider:
 
 ## Methods
 
-We prepared the data by going through each dataset, figuring out which datasets can be merged with other ones and cleaning each dataframe created. 
-After the preparation, we proceeded with data analysis. We decided which datasets to use and merged into one cohesive dataframe that helped us figure out which variables play a huge role in a movies financial success. 
-The last step of the project, after cleaning and analyzing is visualizing all the output of our analysis. We used different types of plots and graphs that explained all our findings. 
+After merging our data and performing initial analysis, we realized that there were signficant outliers within the horror genre. The titles 'The Devil Inside' and 'The Gallows' had small budgets with relatively large revenue, but after researching these two films, we learned both films made all of their money during the first week at the box office and then were complete failures. We decided these movies were atypical and not representative of our data as a whole. In a similar fashion, we discovered that the 3 movies in our data set from 2020 had no revenue information, despite a cursory web search revealing that these movies had indeed made money. Presumably, our data was missing this information, so we decided to drop the few titles that we had from 2020.
+
+As part of our analysis, we grouped our data along each of our categorical variables. We began by analyzing Median/Mean ROI with respect to genre, director, and writer individually. We then analyzed the distribution of ROI by genre, as well as a breakdown of successful directors and writers by genre. We also looked at how median ROI by genre changed from year to year to analyze the trend of each genre across time.
+
+
 
 
 Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
@@ -94,7 +96,7 @@ Questions to consider:
 
 Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
 
-For any additional questions, please contact **name & email, name & email**
+For any additional questions, please contact **Jocel Arcelona (jocelarcelona30@gmail.com), Josh Gottlieb (joshuadavidgottlieb@gmail.com), or Josh Palgon (jopalgon@gmail.com)**.
 
 ## Repository Structure
 
