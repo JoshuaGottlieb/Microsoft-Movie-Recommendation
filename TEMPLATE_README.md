@@ -80,16 +80,22 @@ Questions to consider:
 
 Here is an example of how to embed images from your sub-folder:
 
-### Visual 1
+### Median ROI by Genre
 ![graph1](./images/median_roi_by_genre.png)
 
-### Visual 2
+### Top Genres by ROI Over Time
 ![graph2](./images/change_in_roi_by_genre.png)
 
-### Visual 3
+### Top Directors
 ![graph3](./images/top_directors_by_genre.png)
 
+If any of these graphs are hard to look at due to the web browers settings 
+
 ## Conclusions
+
+Invest in Mystery and Sci-Fi movies due to their high ROI and recent trend.
+Monitor Horror and Thriller movies due to their recent trend. Invest in them if they continue to yield high ROIs.
+Make a Fantasy move with David Lowery as the Director and Writer.
 
 Provide your conclusions about the work you've done, including any limitations or next steps.
 
