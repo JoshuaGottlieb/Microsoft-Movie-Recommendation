@@ -80,40 +80,40 @@ Please look at our full analysis in [our Jupyter Notebooks](./notebooks) or our 
 For any additional questions, please contact:
 
 <ul>
-    <li>**Jocel Arcelona (jocelarcelona30@gmail.com)**</li>
-    <li>**Josh Gottlieb (joshuadavidgottlieb@gmail.com)**</li>
-    <li>**Josh Palgon (jopalgon@gmail.com)**</li>
+    <li>Jocel Arcelona (jocelarcelona30@gmail.com)</li>
+    <li>Josh Gottlieb (joshuadavidgottlieb@gmail.com)</li>
+    <li>Josh Palgon (jopalgon@gmail.com)</li>
 </ul>
 
 ## Repository Structure
 
 ```
-├── README.md                                <- The top-level README for reviewers of this project
-├── Movie_Presentation.pdf                   <- PDF version of project presentation
-├── .gitignore                               <- Hidden file specifying which files to ignore
-├── notebooks                                <- Folder housing Jupyter notebooks with project code
-│   ├── EDA.ipynb                            <- Notebook containing exploratory data analysis code
-│   ├── Merging_and_Cleaning.ipynb           <- Notebook containing merging and cleaning operations code
-│   └── Visualization.ipynb                  <- Notebook containing visualization code
-├── data                                     <- Folder containing external and code-generated data
-│   ├── cleaned                              <- Folder containing cleaned data used by EDA and Visualization notebooks
+├── README.md                          <- The top-level README for reviewers of this project
+├── Movie_Presentation.pdf             <- PDF version of project presentation
+├── .gitignore                         <- Hidden file specifying which files to ignore
+├── notebooks                          <- Folder housing Jupyter notebooks with project code
+│   ├── EDA.ipynb                      
+│   ├── Merging_and_Cleaning.ipynb     
+│   └── Visualization.ipynb            
+├── data                               <- Folder containing external and code-generated data
+│   ├── cleaned                        <- Folder containing cleaned data used by EDA and Visualization notebooks
 │   │   └── merged_data.parquet              
-│   ├── raw                                  <- Folder containing raw files used by Merging notebook
+│   ├── raw                            <- Folder containing raw files used by Merging notebook
 │   │   ├── bom.movie_gross.csv              
 │   │   ├── im.db                            
 │   │   ├── rt.movie_info.tsv                
 │   │   ├── rt.reviews.tsv                   
 │   │   ├── tmdb.movies.csv                  
 │   │   ├── tn.movie_budgets.csv             
-│   │   └── unzip.py                         <- Python script to transform zipped data into raw data
-│   └── zipped                               <- Folder containing zipped data
+│   │   └── unzip.py                   <- Python script to transform zipped data into raw data
+│   └── zipped                         <- Folder containing zipped data
 │       ├── bom.movie_gross.csv.gz
 │       ├── im.db.zip
 │       ├── rt.movie_info.tsv.gz
 │       ├── rt.reviews.tsv.gz
 │       ├── tmdb.movies.csv.gz
 │       └── tn.movie_budgets.csv.gz
-└── images                                   <- Folder containing images generated from code
+└── images                             <- Folder containing images generated from code
 │   ├── change_in_roi_by_genre.png
 │   ├── distribution_of_roi_by_genre.png
 │   ├── median_roi_by_genre.png
