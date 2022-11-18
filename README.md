@@ -55,7 +55,7 @@ Horror and thriller are trending upward despite not being top 5.
 ### Top Directors
 ![Top Directors by Genre](./images/top_directors_by_genre.png)
 
-David Lowery is the top performing director and writer despite being in the fantasy genre that is not top 5.
+David Lowery is the top performing director and writer, despite being in the fantasy genre, which is not top 5.
 
 
 If any of these graphs are hard to look at due to the web browers settings please look at our full analysis in [our Jupyter Notebook](./notebooks) or our [presentation](./Movie_Presentation.pdf).
