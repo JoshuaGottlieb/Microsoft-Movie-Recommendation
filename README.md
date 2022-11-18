@@ -4,11 +4,11 @@
 
 ## Overview
 
-We were tasked with providing Microsoft with a recommendation on how to get into the movie making business by looking at what films are currently doing well in the box office. Our chosen measure of successs is Return on Investment, which is calculated as Worldwide Profit / Production Budget. Our data sources had information only on box office revenue, not other sources such as streaming or downloads. Our data sources are The Numbers (`tn.movie_budgets.csv`), The Movie Database (`tmdb.movies.csv`), Box Office Mojo (`bom.movie_gross.csv`), and IMDb (`im.db`). 
+We were tasked with providing Microsoft with a recommendation on how to get into the movie making business by looking at what films are currently doing well in the box office. Our chosen measure of successs is return on investment, which is calculated as worldwide profit / production budget. Our data sources had information only on box office revenue, not other sources such as streaming or downloads. Our data sources are The Numbers (`tn.movie_budgets.csv`), The Movie Database (`tmdb.movies.csv`), Box Office Mojo (`bom.movie_gross.csv`), and IMDb (`im.db`). 
 
 To clean out data, we dropped all data that could not be joined by movie title and only looked at data from 2010-2019. We decided to use this method, as our budget data only had title to use to link with our other data, and the business question only cares about recent data. We did not have useable information from 2020 onwards, so we chose 2010-2019 to have a ten year period up to our most current data. 
 
-Mystery and Sci-Fi are our top choices for best genres to produce, given their high median return on investment and upward trend in the most recent years. Animation is the highest performing genre by median return on investment in our data set but has been on the decline recently, so we would not recommend producing in Animation. Horror and Thriller are genres that are worth keeping tabs on due to their upward trend but it would be best to see if the trend continues. 
+Mystery and sci-fi are our top choices for best genres to produce, given their high median return on investment and upward trend in the most recent years. Animation is the highest performing genre by median return on investment in our data set but has been on the decline recently, so we would not recommend producing in animation. Horror and thriller are genres that are worth keeping tabs on due to their upward trend but it would be best to see if the trend continues. 
 
 
 ## Business Problem
@@ -41,19 +41,19 @@ As part of our analysis, we grouped our data along each of our categorical varia
 ## Results
 
 ### Median ROI by Genre
-![graph1](./images/median_roi_by_genre.png)
+![Median ROI by Genre](./images/median_roi_by_genre.png)
 
 Animation, mystery and sci-fi are the top performing genres from 2010-2019.
 
 ### Top Genres by ROI Over Time
-![graph2](./images/change_in_roi_by_genre.png)
+![Change in ROI by Genre](./images/change_in_roi_by_genre.png)
 
 However animation has not been trending well, while mystery and sci-fi are still performing strong at the end of the timeframe. 
 
 Horror and thriller are trending upward despite not being top 5. 
 
 ### Top Directors
-![graph3](./images/top_directors_by_genre.png)
+![Top Directors by Genre](./images/top_directors_by_genre.png)
 
 David Lowery is the top performing director and writer despite being in the fantasy genre that is not top 5.
 
@@ -62,7 +62,7 @@ If any of these graphs are hard to look at due to the web browers settings pleas
 
 ## Conclusions
 
-Microsoft should invest in mystery and sci-fi movies due to their high median ROI and recent upward trend.
+Microsoft should invest in mystery and sci-fi movies due to their high median ROI and recent upward trend. Although animation has been doing well, it appears to be on a downward trend, so we do not recommend that Microsoft invests in this genre at the point.
 
 Horror and thriller movies should be monitored due to their recent growth, if they continue to show growth, Microsoft should consider investing in these genres.
 
