@@ -89,7 +89,7 @@ Here is an example of how to embed images from your sub-folder:
 ### Top Directors
 ![graph3](./images/top_directors_by_genre.png)
 
-If any of these graphs are hard to look at due to the web browers settings 
+If any of these graphs are hard to look at due to the web browers settings please look at our full analysis in [our Jupyter Notebook](./notebooks) or our [presentation](./Movie_Presentation.pdf).
 
 ## Conclusions
 
@@ -112,7 +112,7 @@ Provide more recent data in order to increase the accuracy of future predictions
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please look at our full analysis in [our Jupyter Notebooks](./notebooks) or our [presentation](./Movie_Presentation.pdf).
 
 For any additional questions, please contact **Jocel Arcelona (jocelarcelona30@gmail.com), Josh Gottlieb (joshuadavidgottlieb@gmail.com), or Josh Palgon (jopalgon@gmail.com)**.
 
