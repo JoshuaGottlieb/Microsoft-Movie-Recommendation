@@ -158,6 +158,5 @@ __pycache__/
 
 # Data Files
 *.csv
-!merged_data.csv
 *.tsv
 *.db
