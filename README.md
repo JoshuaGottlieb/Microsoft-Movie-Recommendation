@@ -1,72 +1,129 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Title
 
-![blueprint](images/blueprint.png)
+**Authors**: Jocel Arcelona, Josh Gottlieb, Josh Palgon
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Overview
 
-## Repository Contents
+We were tasked with providing Microsoft with a recommendation on how to get into the movie making business by looking at what films are currently doing well in the box office. Our chosen measure of successs is Return on Investment, which is calculated as Worldwide Profit / Production Budget. Our data sources had information only on box office revenue, not other sources such as streaming or downloads. Our data sources are The Numbers (`tn.movie_budgets.csv`), The Movie Database (`tmdb.movies.csv`), Box Office Mojo (`bom.movie_gross.csv`), and IMDb (`im.db`). To clean out data, we dropped all data that could not be joined by movie title and only looked at data from 2010-2019. We decided to use this method, as our budget data only had title to use to link with our other data, and the business question only cares about recent data. We did not have useable information from 2020 onwards, so we chose 2010-2019 to have a ten year period up to our most current data. Mystery and Sci-Fi are our top choices for best genres to produce, given their high median return on investment and upward trend in the most recent years. Animation is the highest performing genre by median return on investment in our data set but has been on the decline recently, so we would not recommend producing in Animation. Horror and Thriller are genres that are worth keeping tabs on due to their upward trend but it would be best to see if the trend continues. 
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `zippedData` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
 
-## Instructions For Using This Repository
+A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
 
-### Fork This Repository
+## Business Problem
 
-**For a group project**, have only one team member do these steps:
+Microsoft wants to enter the movie business, but they do not know what type of movie to make. They want to know which movies are currently doing the best at the box office, so that they can understand what kind of movie to produce.
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+Our business problem is quite vague, as there are no particular variables we are required to focus on. Success is also not defined for us. Therefore, we chose to focus on money overall, specifically the return on investment (ROI) for each movie. ROI is calculated by dividing the worldwide profit by the production costs.
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+ROI is an important metric because it represents a measurement of profitability of a venture that can be used to compare alteranatives with different investment sizes. For example, if a project costs $100 and makes a profit of $200, and another project costs $10,000 and makes a profit of $20,000, they both have an ROI of 200%. This allows us to normalize profits between cheap and expensive movies.
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+One pitfall of using return on investment is that it introduces some instability into our calculations because movies which have a very low budget with a medium-high nominal profit will have an inflated ROI. For a company of Microsoft's size, they may prefer to have a lower return on investment per project but make larger sums of money overall. However, we believe that ROI is useful for showing the overall profitability of a movie and is one of the better single factors to consider outside of a more extensive multi-dimensional analysis.
 
-### Work In Your Fork Of This Repository
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
 
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
-
-### Tidy Up Your Project
-
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - Any unused data files in the `zippedData` folder
-   - Any unused images in the `images` folder
-- Utilize the .gitignore file to ignore large unzipped data files in the `zippedData` folder
-   - Add `*.csv`,`*.tsv`, and `*.db` to the .gitignore file
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
 
 ***
-### Notes
+Questions to consider:
+* What are the business's pain points related to this project?
+* How did you pick the data analysis question(s) that you did?
+* Why are these questions important from a business perspective?
+***
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+## Data
+
+We incorporated data from The Numbers (`tn.movie_budgets.csv`), The Movie Database (`tmdb.movies.csv`), Box Office Mojo (`bom.movie_gross.csv`), and IMDb (`im.db`). We pulled budget and revenue information from the Box Office Mojo and The Numbers datasets. Genre information was pulled from The Movie Database and IMDB, whie directors and writers were pulled solely from IMDB.
+
+As part of merging our data sets, we focused mainly on merging via titles, with release date acting as a secondary key. Our sample size dropped significantly due to a lack of overlap between data sets.
+
+Once we had our data merged, we determined that we had the most information with regards to genre, director, and writer.
+
+
+
+***
+Questions to consider:
+* Where did the data come from, and how do they relate to the data analysis questions?
+* What do the data represent? Who is in the sample and what variables are included?
+* What is the target variable?
+* What are the properties of the variables you intend to use?
+***
+
+## Methods
+
+After merging our data and performing initial analysis, we realized that there were signficant outliers within the horror genre. The titles 'The Devil Inside' and 'The Gallows' had small budgets with relatively large revenue, but after researching these two films, we learned both films made all of their money during the first week at the box office and then were complete failures. We decided these movies were atypical and not representative of our data as a whole. In a similar fashion, we discovered that the 3 movies in our data set from 2020 had no revenue information, despite a cursory web search revealing that these movies had indeed made money. Presumably, our data was missing this information, so we decided to drop the few titles that we had from 2020.
+
+As part of our analysis, we grouped our data along each of our categorical variables. We began by analyzing Median/Mean ROI with respect to genre, director, and writer individually. We then analyzed the distribution of ROI by genre, as well as a breakdown of successful directors and writers by genre. We also looked at how median ROI by genre changed from year to year to analyze the trend of each genre across time.
+
+
+
+
+Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
+
+***
+Questions to consider:
+* How did you prepare, analyze or model the data?
+* Why is this approach appropriate given the data and the business problem?
+***
+
+## Results
+
+Animation, Mystery and Sci-Fi are the top performing genres from 2010-2019. However Animation has not been trending well, while Mystery and Sci-Fi are still performing strong at the end of the timeframe. Horror and Thriller are trending upward despite not being top 5. David Lowery is the top performing director and writer despite being in the fantasy genre that is not top 5.
+
+Present your key results. For Phase 1, this will be findings from your descriptive analysis.
+
+***
+Questions to consider:
+* How do you interpret the results?
+* How confident are you that your results would generalize beyond the data you have?
+***
+
+Here is an example of how to embed images from your sub-folder:
+
+### Median ROI by Genre
+![graph1](./images/median_roi_by_genre.png)
+
+### Top Genres by ROI Over Time
+![graph2](./images/change_in_roi_by_genre.png)
+
+### Top Directors
+![graph3](./images/top_directors_by_genre.png)
+
+If any of these graphs are hard to look at due to the web browers settings 
+
+## Conclusions
+
+Invest in Mystery and Sci-Fi movies due to their high ROI and recent trend.
+Monitor Horror and Thriller movies due to their recent trend. Invest in them if they continue to yield high ROIs.
+Make a Fantasy move with David Lowery as the Director and Writer.
+
+Provide your conclusions about the work you've done, including any limitations or next steps.
+
+***
+Questions to consider:
+* What would you recommend the business do as a result of this work?
+We recommend Microsoft to focus on the top 5 genres based on their rate of profitability, which directors are exceling in those said genres and to focus on the current trends that's making the market tick 
+* What are some reasons why your analysis might not fully solve the business problem?
+There are some vital information that was not provided in the dataset that would have helped answering the business problem more accurately like parental guidelines and the user ratings. The density of sentiment from users usually determines the popularity of a genre and it dictates the current trend, what most viewers want to watch or what movies interests them. 
+* What else could you do in the future to improve this project?
+Provide more recent data in order to increase the accuracy of future predictions
+
+***We recommend Microsoft to focus on the top 5 genres based on their rate of profitability, which directors are exceling in those said genres and to focus on the current trends that's making the market tick 
+
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+
+For any additional questions, please contact **Jocel Arcelona (jocelarcelona30@gmail.com), Josh Gottlieb (joshuadavidgottlieb@gmail.com), or Josh Palgon (jopalgon@gmail.com)**.
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
